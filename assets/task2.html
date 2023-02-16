@@ -1,25 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task-2</title>
+<style>
+form{
+    background-color: ivory;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+</style>
 </head>
-<!-- text, password, email, radio(gender), textarea (address), checkbox (remember password), datetime(dob), select with optgroup (profession), submit, mobile number (10 digit pattern), telephone number (123-1234-123 pattern)) -->
-
 <body>
-    Task-2
-    <form>
+   <h1 style="text-align: center;">Task-2</h1> 
+    <form action="" method="get">
         <fieldset>
             <legend>
                 Registration Form
             </legend>
             <label>Name:</label>
-            <input type="text" required><br><br>
+            <input type="text" required placeholder="Name"><br><br>
             <label>Password</label>
-            <input type="password" required><br><br>
+            <input type="password" required ><br><br>
             <label>Email:</label>
             <input type="email" required><br><br>
             <label id="gender">Gender:</label>
@@ -28,20 +33,28 @@
             <input type="radio" name="gender">Non-Binary <br><br>
             <label>Address:</label>
             <textarea></textarea>
-        </fieldset>
+        </fieldset><br>
         <label>DOB:</label>
         <input type="datetime-local"><br><br>
         <label>Select Profession</label>
-        <select>
-            <optgroup label="CS">
+        <select name="Profession" >
+            <optgroup label="CS" >
                 <option>Trainer</option>
                 <option>Front_end Developer</option>
                 <option>Back-End Developer</option>
                 <option>Database Admin</option>
             </optgroup>
-            <optgroup label="others"></optgroup>
+            <optgroup label="others">
+                <option>Teacher</option>
+                <option>JobLess</option>
+            </optgroup>
         </select>
+        <br><br><label>Mobile Number:</label>
+        <input type="tel" pattern="[0-9]{10}">
+        <br><br><label>Telephone:</label>
+        <input type="tel" pattern="[1-3]{3}-[1-4]{4}-[1-3]{3}" ><br><br>
+        <label>Remember password</label><input type="checkbox"><br><br>
+        <input type="submit" value="register">
     </form>
 </body>
-
 </html>
