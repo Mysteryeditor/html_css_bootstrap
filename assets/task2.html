@@ -16,22 +16,31 @@
             <legend>
                 Registration Form
             </legend>
-         <label>Name:</label> 
-         <input type="text" required><br><br>
-         <label>Password</label>
-         <input type="password" required><br><br>
-         <label>Email:</label>
-         <input type="email" required><br><br>
-         <label id="gender">Gender:</label>
-         <input type="radio" name="gender" >Male
-         <input type="radio" name="gender">Female
-         <input type="radio" name="gender">Non-Binary <br><br>
-         <label>Address:</label>
-         <textarea></textarea>
+            <label>Name:</label>
+            <input type="text" required><br><br>
+            <label>Password</label>
+            <input type="password" required><br><br>
+            <label>Email:</label>
+            <input type="email" required><br><br>
+            <label id="gender">Gender:</label>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+            <input type="radio" name="gender">Non-Binary <br><br>
+            <label>Address:</label>
+            <textarea></textarea>
         </fieldset>
         <label>DOB:</label>
         <input type="datetime-local"><br><br>
-        <select><optgroup><option>Trainer</option></optgroup></select>
+        <label>Select Profession</label>
+        <select>
+            <optgroup label="CS">
+                <option>Trainer</option>
+                <option>Front_end Developer</option>
+                <option>Back-End Developer</option>
+                <option>Database Admin</option>
+            </optgroup>
+            <optgroup label="others"></optgroup>
+        </select>
     </form>
 </body>
 
