@@ -17,8 +17,7 @@
 
         header,
         footer {
-            color: white;
-            background: #dd66668b;
+            background: #66dd708b;
             text-align: center;
         }
 
@@ -36,23 +35,33 @@
         }
 
         #block1 {
-            width: 90%;
+            max-width: 30%;
             height: 30%;
-            border-style: dashed;
+            background-color: bisque;
+            /* border-style: solid;
             border-radius: px;
-            border-color: rgb(239, 87, 16);
-            padding: 5px;
+            border-color: rgb(55, 24, 190); */
+            padding: 3px;
+            float: left;
+            
+        }
+
+        #block2 {
+            max-width: 40%;
+            height: 30%;
+            background-color: rgb(124, 223, 132);
+            float: left;
+            margin-left: 10px ;
         }
     </style>
 </head>
 
 <body>
-
     <div class="container">
-
         <header>
-
-            <h1 style="text-align: center ; color: azure;">wE-Learn The Open College</h1>
+            <img src="assets/actual logo.jpg" height="99px" width="100px" style="float: left;">
+            <h1 style="text-align: center ; color: brown; font-family: 'Times New Roman', Times, serif;">wE-Learn The
+                Open College</h1>
             <ul class="horinav">
                 <li><a href="">Contact</a></li>
                 <li><a href=""> Login</a></li>
@@ -61,10 +70,24 @@
             </ul>
         </header>
         <div id="block1">
-            <h2>Want to become a Genius?</h2>
-            <img src="assets/Elon-Musk1.jpg" height="200px" width="200px"><br>
-            <figcaption>Elon Musk,CEO-TWITTER</figcaption>
+            <h2>Want to become a Genius? Like Them</h2>
+            <img src="assets/Elon-Musk1.jpg" height="100px" width="100px" style="float: left; padding: 4px;">
+            <!-- <figcaption>Elon Musk,CEO-TWITTER</figcaption> -->
+            <p><b>Elon Reeve Musk</b>, (born June 28, 1971) is a business magnate and investor. He is the founder, CEO
+                and
+                chief engineer of SpaceX; angel investor, CEO and product architect of Tesla, Inc.; owner and CEO of
+                Twitter, Inc.; founder of The Boring Company; co-founder of Neuralink and OpenAI </p>
+            <img src="assets/mark zuck.jpeg" style="float: right;" width="250">
+            <p>Mark Elliot Zuckerberg (born May 14, 1984) is an American business magnate, internet
+                entrepreneur, and philanthropist. He is known for co-founding the social media website Facebook and its
+                parent company Meta Platforms (formerly Facebook, Inc)</p>
+            <img src="assets/ratan-tata-image.jpg" width="250px" height="150px" style="float: left;">
+            <p>Ratan Naval Tata (born 28 December 1937) is an Indian businessman and former chairman of Tata Sons. He
+                was also the chairman of the Tata Group from 1990 to 2012, serving also as interim chairman from October
+                2016 through February 2017</p>
         </div>
+        <div id="block2">
+        
     </div>
 </body>
 </html>
